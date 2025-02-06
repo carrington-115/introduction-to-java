@@ -6,6 +6,7 @@ class QuickStart {
         Scanner sc = new Scanner(System.in);
         String scanned = sc.next();
         System.out.println(scanned);
+        sc.close();
     }
 
     public static void main(String[] args) {
