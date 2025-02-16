@@ -9,13 +9,17 @@ class QuickStart {
         sc.close();
     }
 
-    public static void main(String[] args) {
-        QuickStart obj = new QuickStart();
+    void greetings(String name) {
+        System.out.println("Hello " + name);
+    }
 
-        int number = 4;
-        String name = "mark";
-        System.out.println("Hello, World." + number);
-        System.out.println("My name is: " + name);
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        QuickStart obj = new QuickStart();
+        System.out.println("What is your name?");
+        String name = sc.next();
+        obj.greetings(name);
         obj.userInput();
+        sc.close();
     }
 }
