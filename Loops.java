@@ -13,5 +13,9 @@ class ExecuteFile {
         for (int i = 0; i < names.length; i++) {
             System.out.println(i + ": " + names[i]);
         }
+
+        for (String element : names) {
+            System.out.println(element);
+        }
     }
 }
